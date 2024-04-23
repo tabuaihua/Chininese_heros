@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/find.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="icon" href="../static/image/tlogo.png">
+
+</head>
+<body>
+<div class="canvas">
+    <iframe frameborder="0" src="../static/js/index.html" width="100%" height="741"></iframe>
+</div>
+
+    <div class="main center">
+        <h3 class="title">注册</h3>
+           <div class="body">
+               <form action="/register/" method="post">
+                   <div class="body1">
+                            <input type="text" placeholder="昵称" disabled>
+                            <input type="text" placeholder="请输入用户昵称"  name="username" class="phone">
+                            <div style=""> {{msg}}</div>
+                    </div>
+                    <div class="body1">
+                             <input type="text" placeholder="邮箱" disabled>
+                            <input type="email" placeholder="请输入邮箱"  name="useremail" class="phone">
+                            <i class="phonetip"></i>
+                            <div style=""> {{msg}}</div>
+                    </div>
+
+                        <div class="body3">
+                                <input type="password" name="userpassword" required placeholder="填写密码，6-20位字符，包含字母和数字" class="psd1">
+                                <i class="tip"></i>
+                        </div>
+                        <div class="body4">
+                                <input type="password" name="userrepassword" required placeholder="请再次输入密码" class="psd2">
+
+                        </div>
+                    <div style="">{{error_msg}}</div>
+                        <div class="body6"><input type="checkbox" checked><span> 已阅读并同意《用户使用协议》和《隐私政策》</span></div>
+                        <div class="body5"><button type="submit" value="注册">注册</button></div>
+                   </form>
+               </div>
+
+
+               <div class="prev">
+                   <a href="{% url 'login' %}" target="_blank" role="button">已有账户，立即登录</a>
+<!--                   <a href="login.html">已有账户，立即登录</a>-->
+               </div>
+    </div>
+
+</body>
+</html>

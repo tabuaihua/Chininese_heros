@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/find.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="icon" href="../static/image/tlogo.png">
+    <script src="../static/js/login.js"></script>
+</head>
+<body>
+<div class="canvas">
+    <iframe frameborder="0" src="../static/js/index.html" width="100%" height="741"></iframe>
+</div>
+    <div class="main center">
+        <h2 class="title">找回密码</h2>
+           <div class="body">
+               <form action="index.html" method="GET">
+                    <div class="body1">
+                            <input type="text" placeholder="+86" disabled>
+                            <input type="text" placeholder="请输入账号" required name="账号" class="phone">
+                            <i class="phonetip"></i>
+                        </div>
+                        <div class="body2">
+                                <input type="text" placeholder="手机验证码" name="验证码" required class="code">
+                                <span>获取短信验证码</span>
+                                <i class="checks">二十五特务</i>
+                        </div>
+                        <div class="body3">
+                                <input type="password" name="密码" required placeholder="填写重置后密码，6-20位字符，包含字母和数字" class="psd1">
+                              <i class="tip"></i>
+                        </div>
+                        <div class="body4">
+                                <input type="password" name="密码" required placeholder="请再次输入密码" class="psd2">
+
+                        </div>
+                        <div class="body5"><button type="button" >登录</button></div>
+
+               </form></div>
+               <div class="prev">
+                 <!--  <a href="login.html">已有账户，立即登录</a> -->
+
+
+
+                   <a href="{% url 'login' %}" target="_blank" role="button">已有账户，立即登录</a>
+               </div>
+    </div>
+    <script>
+     var phone=document.querySelector(".phone");
+    var phonetip=document.querySelector(".phonetip");
+    var code=document.querySelector(".code");
+    var checks=document.querySelector(".checks");
+    check(phone,phonetip,"请输入手机号");
+    check(code,checks,"请输入验证码")
+    var psd1=document.querySelector(".psd1")
+    var psd2=document.querySelector(".psd2")
+    var btn=document.querySelector("button");
+    var tip=document.querySelector(".tip");
+    btn.addEventListener("click",function(){
+        if(psd1.value===psd2.value){
+            this.type="submit";
+        }
+        else{
+            tip.innerHTML="密码不一致，请确认密码";
+            this.type="button";
+        }
+
+    })
+    sessionStorage.setItem("uname",phone);
+       sessionStorage.setItem("upsd",code);
+    </script>
+</body>
+</html>

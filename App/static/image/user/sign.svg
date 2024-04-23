@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="绘图.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient2912"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2910" />
+    </linearGradient>
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="51.51705"
+       height="31.564498"
+       patternTransform="translate(-4.6178483,8.686269)"
+       id="pattern2933">
+      <ellipse
+         style="fill:none;stroke:none;stroke-width:1.23069"
+         id="path10"
+         cx="14.582798"
+         cy="24.148623"
+         rx="11.383217"
+         ry="7.2876043" />
+      <text
+         xml:space="preserve"
+         style="font-size:49.2276px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;fill:#55ddff;fill-opacity:1;stroke-width:1.23069"
+         x="6.20437"
+         y="30.124786"
+         id="text24"
+         transform="scale(0.97022477,1.030689)"><tspan
+           sodipodi:role="line"
+           x="6.20437"
+           y="30.124786"
+           style="fill:#55ddff;fill-opacity:1;stroke-width:1.23069"
+           id="tspan22">w</tspan></text>
+      <ellipse
+         id="path26"
+         style="fill:#280b0b;stroke:#000000;stroke-width:1.23069"
+         cx="0.62943453"
+         cy="11.671849"
+         rx="0.014089677"
+         ry="0.014967743" />
+      <path
+         style="opacity:1;fill:#55ddff;stroke:none;stroke-width:1.00157;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+         d="M 7.9805082,3.3251225 43.99876,3.170456 19.338411,28.957757 l 22.0087,-0.22099 -0.26518,2.60746 -30.065812,0.220271 26.857994,-25.9375037 -28.5624985,0.625 z"
+         id="path863"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 7.1866144,6.5645137 Z"
+         id="path865" />
+      <path
+         style="fill:#55ddff;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 14.209173,28.429635 20.213359,28.174328 44.788039,3.4394933 39.614404,3.154563 Z"
+         id="path887"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:#55ddff;stroke:none;stroke-width:0.868218px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 38.012455,5.15701 C 43.142709,-1.7526195 48.521687,-1.0485366 51.51705,3.3306297 L 49.629761,4.8340966 C 46.838414,0.58635479 42.712289,5.3394902 40.005778,7.5707747 Z"
+         id="path2926"
+         sodipodi:nodetypes="ccccc" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="8"
+     inkscape:cx="41.300987"
+     inkscape:cy="16.202836"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     inkscape:pagecheckerboard="true"
+     inkscape:snap-global="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="1040"
+     inkscape:window-x="182"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <path
+       id="rect2943"
+       style="fill:url(#pattern2933);stroke:none"
+       transform="scale(0.26458333)"
+       d="M -4.6178484,8.6862688 H 46.899203 V 40.250768 H -4.6178484 Z" />
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="icon" href="../static/image/tlogo.png">
+</head>
+
+<body>
+<div class="canvas">
+    <iframe frameborder="0" src="../static/js/index.html" width="100%" height="741"></iframe>
+</div>
+
+    <div class="body">
+    <div class="main center">
+        <div class="biglogo">
+            <img src="../static/image/logo.png" alt="">
+        </div>
+        <div class="login">
+            <div>账号登录</div>
+            <div class="choice">
+                <span class="psdlogin">密码登录</span>
+<!--                <span class="msglogin">短信登录</span>-->
+            </div>
+            <form action="/login/" method="POST" name="login">
+                <div class="section1">
+                <div ><input type="text" placeholder="请输入邮箱"  class="userid" name="username"></div>
+                <span class="idtip"></span>
+                <div >
+                    <input type="password" placeholder="请输入密码"  class="userpsd" name="userpassword">
+                </div>
+                <span class="psdtip"></span>
+                </div>
+<!--            <div class="section2">-->
+<!--                <div class="phone">-->
+<!--                   <input type="text" class="ph" placeholder="+86">-->
+<!--                   <input type="text" class="userph" placeholder="请输入账号" ><br>-->
+<!--                <span id="userph"></span>-->
+<!--                </div>-->
+<!--                <div class="code">-->
+<!--                    <input type="text" class="codenumber" placeholder="短信验证码" ><br>-->
+<!--                    <a>获取短信验证码</a>-->
+<!--                    <span id="codenumber"></span>-->
+<!--                </div>-->
+<!--            </div>-->
+                <div><input type="checkbox" checked><span> 已阅读并同意《用户使用协议》和《隐私政策》</span></div>
+                <div><button class="login_click" type="submit">登录</button></div>
+                <div class="lgfooter">
+                    <input type="checkbox"> 三天内自动登录
+                    <span>
+<!--                        <a href="find.html">忘记密码</a>-->
+<!--                        <a href="register.html">注册</a>-->
+                        <a href="{% url 'find' %}" target="_blank" value="submit">忘记密码</a>
+                        <a href="{% url 'register' %}" target="_blank" value="submit">注册</a>
+                        <p style="">
+                            {{error_msg}}
+                        </p>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

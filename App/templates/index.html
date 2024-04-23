@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>铭记英雄，感恩前行</title>
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="stylesheet" href="../static/css/find.css">
+    <link rel="icon" href="../static/image/tlogo.png">
+    <style>
+    </style>
+    <link rel="stylesheet" href="../static/css/jianjie.css">
+</head>
+<body>
+<header>
+    <div id="top">
+        <div class="top-content">
+            <div class="logo">
+                <img src="../static/image/logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <div class="font-top">首页</div>
+                        <div class="font-down">INDEX</div>
+                    </li>
+                    <li>
+                        <a href="question/" target="_blank" >
+                        <div class="font-top">测试</div>
+                        <div class="font-down">COLLECTION</div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="font-top">我的人物</div>
+                        <div class="font-down">CHARACTERS</div>
+                    </li>
+                    <li>
+                        <a href="user/" target="_blank" >
+                            <div class="font-top">我的主页</div>
+                            <div class="font-down">INTEGRAL</div>
+                        </a>
+
+                    </li>
+                    <!--                        <li>-->
+                    <!--                            <div class="font-top">自助系统</div>-->
+                    <!--                            <div class="font-down">SYSTEM</div>-->
+                    <!--                        </li>-->
+
+                </ul>
+            </div>
+            <div class="header-user">
+                <div class="user-img">
+                    <div class="user-user"></div>
+                </div>
+                <div class="user-brief">
+                    <!--                         <a href="register.html" >亲爱的游客,欢迎登录</a>-->
+                    <P>
+                        {% if name1 == None %}
+                        <a href="{% url 'login' %}"  role="button">亲爱的游客,欢迎登录</a>
+                        {% elif name1 != None %}
+                        {{name1.name}}
+                        <a href="{% url 'login' %}"> 退出登录</a>
+                        {% endif %}
+                    </P>
+                </div>
+            </div>
+            <div class="header-app">
+                <div class="app-app">
+
+                </div>
+
+            </div>
+            <div class="header-app">
+                <div class="app-search"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-active">
+
+    </div>
+
+
+</header>
+
+<main>
+    <div class="main-index1">
+        <div class="main1-content main1-content1">
+            <div class="lunbo">
+                <ul class="lunbo-content">
+                    <li><img src="../static/image/heros/anshizhiluan.jfif" alt="" width="820" height="340"></li>
+                    <li><img src="../static/image/heros/liuhulan.jfif" alt="" width="820" height="340"></li>
+                    <li><img src="../static/image/heros/changzheng.jfif" alt="" width="820" height="340"></li>
+                    <li><img src="../static/image/heros/zhongyinchongtu.jfif" alt="" width="820" height="340"></li>
+                    <li><img src="../static/image/heros/zhongnanshan.jfif" alt="" width="820" height="340"></li>
+
+                </ul>
+                <div class="dian">
+                    <ul>
+                        <li class="active">安史之乱</li>
+                        <li>刘胡兰</li>
+                        <li>长征</li>
+                        <li>中印冲突</li>
+                        <li>钟南山</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-news">
+             <div class="glitch" data-text="简介">简介:</div>
+<!--                    <ul>-->
+<!--                        <li>简介</li>-->
+<!--                    </ul>-->
+<!--                    <h3>-->
+<!--                        本网站建立的初衷-->
+<!--                    </h3>-->
+                    <h3 style="font-size: 25px;color:yellowgreen;display: block">
+                        主要介绍了中国自古以来的英雄基本情况，以图片和文字介绍相结合的方式，其中穿插一些视频，以网站浏览的方式综合展示了华夏各时代的英雄。本网站设计的主要目的，就是让更多的人能够了解这些历史人物，与此同时弘扬我国的历史文化，传承他们身上的优秀品质。
+                    </h3>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-index1">
+        <div class="main1-content main1-content3">
+            <!--                第一个视频-->
+            <div class="main3-left">
+                <div class="main3-left-2">
+                    <div class="main3-left2-dazhezhao">
+                                                    <video autoplay id="media" controls  src="../static/image/heros/铭记英雄，感恩前行.mp4"></video>
+                        <p class="p1">实践活动视频</p>
+                        <a href="javascript:;" class="a3">查看详情</a>
+                    </div>
+                    <i class="main3-left-1-zhezhao"></i>
+                    <a href="javascript:;" class="main3-left-a">人物视频</a>
+                    <p class="main3-left-p1">实践活动视频</p>
+                </div>
+            </div>
+            <!--         第二个视频       -->
+            <div class="main3-left3">
+                <div class="main3-left-2">
+                    <div class="main3-left2-dazhezhao">
+                        <a href="javascript:;" class="a3">查看详情</a>
+                    </div>
+                    <i class="main3-left-1-zhezhao"></i>
+                    <a href="javascript:;" class="main3-left-a">人物视频</a>
+                    <p class="main3-left-p1">包公园</p>
+                    <p class="main3-left-p2"><a href="javascript:;">视频2</a></p>
+                </div>
+            </div>
+            <!--                第三个视频-->
+            <div class="main3-left4">
+                <div class="main3-left-2">
+                    <div class="main3-left2-dazhezhao">
+                        <a href="javascript:;" class="a3">查看详情</a>
+                    </div>
+                    <i class="main3-left-1-zhezhao"></i>
+                    <a href="javascript:;" class="main3-left-a">人物视频</a>
+                    <p clasc s="main3-left-p1">名人馆</p>
+                    <p class="main3-left-p2"><a href="javascript:;">视频3</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="main3-down">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="main-index0">
+        <div class="main-index1">
+            <div class="main1-content main1-content4">
+                <div class="main4-left">
+                    <div class="main4-left-top">
+                        <h2>人物转台</h2>
+                        <div class="super_main">
+                            <div id="image_wrap">
+                                <img src="../static/image/heros/kongzi.jpg" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/caocao.png" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/lihongzhang.png" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/yuanlongping.png" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/dengjiaxian.png" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/dengxiaoping.png" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/baozheng.png" alt="" width="125" height="222" class="kk">
+                                <img src="../static/image/heros/yangzhengning.png" alt="" width="125" height="222" class="kk">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+    <!-- 三国是近代 唐朝是现代               -->
+    <div class="main-index0">
+        <div class="main-index1">
+            <div class="main1-content main1-content5">
+                <div class="main5-top">
+                    <h2>人物资料</h2>
+                    <ul>
+                        <li>所有人物</li>
+                        <li>古代</li>
+                        <li>近代</li>
+                        <li>现代</li>
+                    </ul>
+                </div>
+                <div class="main5-content">
+                    <div class="inner inner0">
+                        <div class="outer">
+                            <ul>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=周瑜" target="_blank">
+                                        <img src="../static/image/heros/zhouyu.png" alt="">
+                                        <p>周瑜</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=张飞" target="_blank">
+                                        <img src="../static/image/heros/zhangfei.png" alt="">
+                                        <p> 张飞</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=戚继光" target="_blank">
+                                        <img src="../static/image/heros/qijiguang.png" alt="">
+                                        <p> 戚继光</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=朱元璋" target="_blank">
+                                        <img src="../static/image/heros/zhuyuanzhang.png" alt="">
+                                        <p> 朱元璋</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=岳钟琪" target="_blank">
+                                        <img src="../static/image/heros/yuezhongqi.png" alt="">
+                                        <p> 岳钟琪</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=郑成功" target="_blank">
+                                        <img src="../static/image/heros/dengchengong.png" alt="">
+                                        <p> 郑成功</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=岳飞" target="_blank">
+                                        <img src="../static/image/heros/yuefei.png" alt="">
+                                        <p> 岳飞</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=岳云" target="_blank">
+                                        <img src="../static/image/heros/yueyun.png" alt="">
+                                        <p> 岳云</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=文天祥" target="_blank">
+                                        <img src="../static/image/heros/wentianxiang.png" alt="">
+                                        <p> 文天祥</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=铁木真" target="_blank">
+                                        <img src="../static/image/heros/tiemuzhen.png" alt="">
+                                        <p> 铁木真</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=李世民" target="_blank">
+                                        <img src="../static/image/heros/lishimin.png" alt="">
+                                        <p> 李世民</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=李靖" target="_blank">
+                                        <img src="../static/image/heros/lijing.png" alt="">
+                                        <p> 李靖</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=诸葛亮" target="_blank">
+                                        <img src="../static/image/heros/zhugeliang.png" alt="">
+                                        <p> 诸葛亮</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=诸葛瑾" target="_blank">
+                                        <img src="../static/image/heros/zhugejin.png" alt="">
+                                        <p> 诸葛瑾</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=孙权" target="_blank">
+                                        <img src="../static/image/heros/sunquan.png" alt="">
+                                        <p> 孙权</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=孙策" target="_blank">
+                                        <img src="../static/image/heros/sunce.png" alt="">
+                                        <p> 孙策</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=司马懿" target="_blank">
+                                        <img src="../static/image/heros/simayi.png" alt="">
+                                        <p> 司马懿</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=司马昭" target="_blank">
+                                        <img src="../static/image/heros/simazhao.png" alt="">
+                                        <p> 司马昭</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=马超" target="_blank">
+                                        <img src="../static/image/heros/machao.png" alt="">
+                                        <p> 马超</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=吕蒙" target="_blank">
+                                        <img src="../static/image/heros/lvmeng.png" alt="">
+                                        <p> 吕蒙</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=刘备" target="_blank">
+                                        <img src="../static/image/heros/liubei.png" alt="">
+                                        <p> 刘备</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=黄忠" target="_blank">
+                                        <img src="../static/image/heros/huangzhong.png" alt="">
+                                        <p> 黄忠</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=关羽" target="_blank">
+                                        <img src="../static/image/heros/guanyu.png" alt="">
+                                        <p> 关羽</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=曹操" target="_blank">
+                                        <img src="../static/image/heros/caocao.png" alt="">
+                                        <p> 曹操</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=张良" target="_blank">
+                                        <img src="../static/image/heros/zhangliang.png" alt="">
+                                        <p> 张良</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=萧何" target="_blank">
+                                        <img src="../static/image/heros/xiaohe.png" alt="">
+                                        <p> 萧何</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=项羽" target="_blank">
+                                        <img src="../static/image/heros/xiangyu.png" alt="">
+                                        <p> 项羽</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=吕布" target="_blank">
+                                        <img src="../static/image/heros/lvbu.png" alt="">
+                                        <p> 吕布</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=刘邦" target="_blank">
+                                        <img src="../static/image/heros/liubang.png" alt="">
+                                        <p> 刘邦</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=韩信" target="_blank">
+                                        <img src="../static/image/heros/hanxin.png" alt="">
+                                        <p> 韩信</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=李广" target="_blank">
+                                        <img src="../static/image/heros/liguang.png" alt="">
+                                        <p> 李广</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=霍去病" target="_blank">
+                                        <img src="../static/image/heros/huoqubing.png" alt="">
+                                        <p> 霍去病</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=廉颇" target="_blank">
+                                        <img src="../static/image/heros/lianpo.png" alt="">
+                                        <p> 廉颇</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=勾践" target="_blank">
+                                        <img src="../static/image/heros/goujian.png" alt="">
+                                        <p> 勾践</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=孙膑" target="_blank">
+                                        <img src="../static/image/heros/suibin.png" alt="">
+                                        <p> 孙膑</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="zhanguo">
+                                    <a href="heros/?heroname=包拯" target="_blank">
+                                        <img src="../static/image/heros/baozheng.png" alt="">
+                                        <p> 包拯</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=邓小平" target="_blank">
+                                        <img src="../static/image/heros/dengxiaoping.png" alt="">
+                                        <p> 邓小平</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=左宗棠" target="_blank">
+                                        <img src="../static/image/heros/zuozongtang.png" alt="">
+                                        <p> 左宗棠</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=曾国藩" target="_blank">
+                                        <img src="../static/image/heros/cengguofan.png" alt="">
+                                        <p> 曾国藩</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=张之洞" target="_blank">
+                                        <img src="../static/image/heros/zhangzhidong.png" alt="">
+                                        <p> 张之洞</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=谭嗣同" target="_blank">
+                                        <img src="../static/image/heros/tansitong.png" alt="">
+                                        <p> 谭嗣同</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=李鸿章" target="_blank">
+                                        <img src="../static/image/heros/lihongzhang.png" alt="">
+                                        <p> 李鸿章</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=胡林翼" target="_blank">
+                                        <img src="../static/image/heros/hulinyi.png" alt="">
+                                        <p> 胡林翼</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=林则徐" target="_blank">
+                                        <img src="../static/image/heros/linzexu.png" alt="">
+                                        <p> 林则徐</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=孙中山" target="_blank">
+                                        <img src="../static/image/heros/sunzhongshan.png" alt="">
+                                        <p> 孙中山</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=李大钊" target="_blank">
+                                        <img src="../static/image/heros/lidazhao.png" alt="">
+                                        <p> 李大钊</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=鲁迅" target="_blank">
+                                        <img src="../static/image/heros/lusu.png" alt="">
+                                        <p> 鲁迅</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=叶挺" target="_blank">
+                                        <img src="../static/image/heros/yeting.png" alt="">
+                                        <p> 叶挺</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=张学良" target="_blank">
+                                        <img src="../static/image/heros/zhangxueyou.png" alt="">
+                                        <p> 张学良</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=毛泽东" target="_blank">
+                                        <img src="../static/image/heros/maozedong.png" alt="">
+                                        <p> 毛泽东</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=闻一多" target="_blank">
+                                        <img src="../static/image/heros/wenyiduo.png" alt="">
+                                        <p> 闻一多</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=刘胡兰" target="_blank">
+                                        <img src="../static/image/heros/liuhulan.png" alt="">
+                                        <p> 刘胡兰</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=赵一曼" target="_blank">
+                                        <img src="../static/image/heros/zhaoyiman.png" alt="">
+                                        <p> 赵一曼</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=康有为" target="_blank">
+                                        <img src="../static/image/heros/kangyouwei.png" alt="">
+                                        <p> 康有为</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=梁启超" target="_blank">
+                                        <img src="../static/image/heros/liangqichao.png" alt="">
+                                        <p> 梁启超</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=陈独秀" target="_blank">
+                                        <img src="../static/image/heros/chenduxiu.png" alt="">
+                                        <p> 陈独秀</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=周恩来" target="_blank">
+                                        <img src="../static/image/heros/zhouenlai.png" alt="">
+                                        <p> 周恩来</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=朱德" target="_blank">
+                                        <img src="../static/image/heros/zhude.png" alt="">
+                                        <p> 朱德</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=彭德怀" target="_blank">
+                                        <img src="../static/image/heros/pengdehuai.png" alt="">
+                                        <p> 彭德怀</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=杨开慧" target="_blank">
+                                        <img src="../static/image/heros/yangkaihui.png" alt="">
+                                        <p> 杨开慧</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=罗亦农" target="_blank">
+                                        <img src="../static/image/heros/luoyinong.png" alt="">
+                                        <p> 罗亦农</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=李公朴" target="_blank">
+                                        <img src="../static/image/heros/ligongpu.png" alt="">
+                                        <p> 李公朴</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=关向应" target="_blank">
+                                        <img src="../static/image/heros/guanxiangying.png" alt="">
+                                        <p> 关向应</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=刘志丹" target="_blank">
+                                        <img src="../static/image/heros/liuzhidan.png" alt="">
+                                        <p> 刘志丹</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=魏源" target="_blank">
+                                        <img src="../static/image/heros/weiyuan.png" alt="">
+                                        <p> 魏源</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=洪秀全" target="_blank">
+                                        <img src="../static/image/heros/hongxiuquan.png" alt="">
+                                        <p> 洪秀全</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="sanguo">
+                                    <a href="heros/?heroname=徐世昌" target="_blank">
+                                        <img src="../static/image/heros/xushichang.png" alt="">
+                                        <p> 徐世昌</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=杨振宁" target="_blank">
+                                        <img src="../static/image/heros/yangzhengning.png" alt="">
+                                        <p> 杨振宁</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=邓稼先" target="_blank">
+                                        <img src="../static/image/heros/dengjiaxian.png" alt="">
+                                        <p> 邓稼先</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=申纪兰" target="_blank">
+                                        <img src="../static/image/heros/shenjilan.png" alt="">
+                                        <p> 申纪兰</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=许振超" target="_blank">
+                                        <img src="../static/image/heros/xuzhenchao.png" alt="">
+                                        <p> 许振超</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=丁晓兵" target="_blank">
+                                        <img src="../static/image/heros/dingxiaobing.png" alt="">
+                                        <p> 丁晓兵</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=孔繁森" target="_blank">
+                                        <img src="../static/image/heros/kongfansen.png" alt="">
+                                        <p> 孔繁森</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=方永刚" target="_blank">
+                                        <img src="../static/image/heros/fangyonggang.png" alt="">
+                                        <p> 方永刚</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=王杰" target="_blank">
+                                        <img src="../static/image/heros/wangjie.png" alt="">
+                                        <p> 王杰</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=王选" target="_blank">
+                                        <img src="../static/image/heros/wangxuan.png" alt="">
+                                        <p> 王选</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=王乐义" target="_blank">
+                                        <img src="../static/image/heros/wangleyi.png" alt="">
+                                        <p> 王乐义</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=马立训" target="_blank">
+                                        <img src="../static/image/heros/malixun.png" alt="">
+                                        <p> 马立训</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=马恒昌" target="_blank">
+                                        <img src="../static/image/heros/mahengchang.png" alt="">
+                                        <p> 马恒昌</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=方红霄" target="_blank">
+                                        <img src="../static/image/heros/fanghongxiao.png" alt="">
+                                        <p> 方红霄</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=王有德" target="_blank">
+                                        <img src="../static/image/heros/wangyoude.png" alt="">
+                                        <p> 王有德</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=王进喜" target="_blank">
+                                        <img src="../static/image/heros/wangjinxi.png" alt="">
+                                        <p> 王进喜</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=史光柱" target="_blank">
+                                        <img src="../static/image/heros/shiguangzhu.png" alt="">
+                                        <p> 史光柱</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=史来贺" target="_blank">
+                                        <img src="../static/image/heros/lilaihe.png" alt="">
+                                        <p> 史来贺</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=叶欣" target="_blank">
+                                        <img src="../static/image/heros/yexin.png" alt="">
+                                        <p> 叶欣</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=任长霞" target="_blank">
+                                        <img src="../static/image/heros/renchangxia.png" alt="">
+                                        <p> 任长霞</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=刘英俊" target="_blank">
+                                        <img src="../static/image/heros/liuyingjun.png" alt="">
+                                        <p> 刘英俊</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=达吾提·阿西木" target="_blank">
+                                        <img src="../static/image/heros/dawutiaximu.png" alt="">
+                                        <p> 达吾提·阿西木</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=邢燕子" target="_blank">
+                                        <img src="../static/image/heros/xingyanzi.png" alt="">
+                                        <p> 邢燕子</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=吴大观" target="_blank">
+                                        <img src="../static/image/heros/wudaguan.png" alt="">
+                                        <p> 吴大观</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=吴天祥" target="_blank">
+                                        <img src="../static/image/heros/wutianxiang.png" alt="">
+                                        <p> 吴天祥</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=张华" target="_blank">
+                                        <img src="../static/image/heros/zhanghua.png" alt="">
+                                        <p> 张华</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=李春燕" target="_blank">
+                                        <img src="../static/image/heros/lichunyan.png" alt="">
+                                        <p> 李春燕</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=杨利伟" target="_blank">
+                                        <img src="../static/image/heros/yangliwei.png" alt="">
+                                        <p> 杨利伟</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=杨根思" target="_blank">
+                                        <img src="../static/image/heros/yanggensi.png" alt="">
+                                        <p> 杨根思</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=邱光华" target="_blank">
+                                        <img src="../static/image/heros/qiuguanghua.png" alt="">
+                                        <p> 邱光华</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=徐虎" target="_blank">
+                                        <img src="../static/image/heros/xuhu.png" alt="">
+                                        <p> 徐虎</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=袁隆平" target="_blank">
+                                        <img src="../static/image/heros/yuanlongping.png" alt="">
+                                        <p> 袁隆平</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=彭加木" target="_blank">
+                                        <img src="../static/image/heros/pengjiamu.png" alt="">
+                                        <p> 彭加木</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                                <li class="tangchao">
+                                    <a href="heros/?heroname=樊锦诗" target="_blank">
+                                        <img src="../static/image/heros/fanjinshi.png" alt="">
+                                        <p> 樊锦诗</p>
+                                        <i> </i>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                    <div class="inner inner1">
+                        <div class="outer">
+                            <ul></ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                    <div class="inner inner2">
+                        <div class="outer">
+                            <ul></ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                    <div class="inner inner3">
+                        <div class="outer">
+                            <ul></ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                    <div class="inner inner4">
+                        <div class="outer">
+                            <ul></ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                    <div class="inner inner5">
+                        <div class="outer">
+                            <ul></ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                    <div class="inner inner6">
+                        <div class="outer">
+                            <ul></ul>
+                        </div>
+                        <div class="gundong"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+</body>
+<script src="../static/js/scroll.js"></script>
+<script src="../static/js/swiper.js"></script>
+<script src="../static/js/app.js"></script>
+<script src="../static/js/script.js"></script>
+<script src="../static/js/store.js"></script>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="stylesheet" href="../static/css/find.css">
+    <link href="../static/css/Mainbody.css" type="text/css" rel="stylesheet"/>
+
+
+    <!--    网页图标-->
+    <link rel="icon" href="../static/image/tlogo.png">
+</head>
+<body id="body" class="bodyStyle">
+<header>
+    <div id="top">
+        <div class="top-content">
+            <div class="logo">
+                <img src="../static/image/logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">
+                            <div class="font-top">首页</div>
+                            <div class="font-down">INDEX</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'question' %}">
+                            <div class="font-top">测试</div>
+                            <div class="font-down">COLLECTION</div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="font-top">我的人物</div>
+                        <div class="font-down">CHARACTERS</div>
+                    </li>
+                    <li>
+                        <a href="{% url 'user' %}">
+                            <div class="font-top">我的主页</div>
+                            <div class="font-down">INTEGRAL</div>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="header-user">
+                <div class="user-img">
+                    <div class="user-user"></div>
+                </div>
+                <div class="user-brief">
+                    {{username.name}}
+                </div>
+            </div>
+            <div class="header-app">
+                <div class="app-app">
+
+                </div>
+
+            </div>
+            <div class="header-app">
+                <div class="app-search"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-active">
+
+    </div>
+</header>
+<div class="main_body">
+    <div class="outOfBlog">
+        <div class="blog_content">
+            <!--                幻灯片Html代码-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="../static/image/user/zhongyinchongtu.jpg" style="width:100%" alt="R1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../static/image/user/liuhulan.jpg" style="width:100%" alt="R2">
+                </div>
+
+
+                <div class="mySlides fade">
+                    <img src="../static/image/user/zhongnanshan.png" style="width:100%" alt="R4">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../static/image/user/feiduoludingqiao.png" style="width:100%" alt="R5">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <script>
+                //幻灯片js代码
+                var slideIndex = 1;
+                showSlides(slideIndex);
+                myFunction();
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+                function myFunction() {
+                    if (slideIndex < 6) {
+                        setInterval(function () {
+                            plusSlides(1)
+                        }, 4500);
+                    } else {
+                        slideIndex = 1;
+                        setInterval(function () {
+                            plusSlides(1)
+                        }, 4500);
+                    }
+                }
+            </script>
+            <br>
+            <h3 style="color: #1f1f1f;">———————勋章墙————————</h3>
+            <div style="position: relative;width: 670px; height: 400px;margin-top: 25px; border-radius: 20px">
+                <div style="position: relative;width: 670px; height: 198px;background-color: #f6f6f6; margin-top: 25px; border-radius: 20px;margin-left: 4px">
+                    <h4 style="float: left;padding-left: 10px">我拥有的：</h4>
+                    <img src="../static/image/user/xuznahng5.png" alt="勋章"/>
+
+                </div>
+                <div style="position: relative;width: 670px; height: 198px; background-color: #f6f6f6; margin-top: 25px; border-radius: 20px;">
+                    <h4 style="float: left;padding-left: 10px;">未拥有：</h4>
+                    <img src="../static/image/user/xuanzhang1.png" alt="勋章"/>
+                    <img src="../static/image/user/xuznahng2.png" alt="勋章"/>
+                    <img src="../static/image/user/xuznahng3.png" alt="勋章"/>
+                    <img src="../static/image/user/xuznahng4.png" alt="勋章"/>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="selfOfSpace">
+        <div class="selfJPG" id="animated_JPG">
+            <img alt="wzjPicture" class=“wzjPicture” src="../static/image/user/selfJPG.jpg">
+        </div>
+        <div class="selfInfo">
+            <div class="info">
+                    <span class="oneLine">
+                        <span class="divInfoLeft">姓&nbsp&nbsp名：{{username.name}}</span>
+                        <span class="divInfoRight">年&nbsp&nbsp龄：19&nbsp&nbsp&nbsp</span>
+                    </span>
+                <span class="oneLine">
+                        <span class="divInfoLeft">邮&nbsp&nbsp箱：{{username.mail}}</span>
+
+                    </span>
+
+                <span class="oneLine">
+                        <span class="divInfoLeft">家&nbsp&nbsp乡：安徽</span>
+                         <span class="divInfoRight">性别：男</span>
+                  </span>
+                <span class="oneLine">
+                        <span class="divInfoLeft">积分剩余：{{score}}</span>
+                    </span>
+                <div id="animated_div"><span style="font-size:10px"></span>
+                </div>
+                <h4>讨论区</h4>
+                <form action="/user/" method="post">
+                <textarea rows="13" cols="45"  name="text" >
+                {{speak}}
+                </textarea>
+                <div class="body5"><button type="submit" >提交</button></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

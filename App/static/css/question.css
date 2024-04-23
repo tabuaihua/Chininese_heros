@@ -1,0 +1,244 @@
+* {
+        padding: 0;
+        margin: 0;
+   }
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+  text-decoration:none;
+}
+header {
+  margin: 0 auto;
+  max-width: 2000px;
+  transition: 0.6s;
+  position: relative;
+  background-image: url("../image/heros/back3.png");
+  width: 100%;
+  height: 360px;
+  background-position: center;
+}
+header #top {
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(28, 28, 33, 0.7) 40%, transparent);
+  width: 100%;
+  overflow: hidden;
+}
+header #top .top-content {
+  margin-top: 15px;
+  height: 78px;
+  margin-left: 6%;
+  width: 88%;
+}
+header #top .top-content .logo {
+  margin-top: -5px;
+  float: left;
+}
+header #top .top-content .header-nav {
+  display: inline-block;
+}
+header #top .top-content .header-nav ul {
+  display: inline-block;
+  width: 750px;
+  height: 80px;
+    list-style: none;
+}
+header #top .top-content .header-nav ul li {
+  float: left;
+  margin-left: 30px;
+  margin-right: 25px;
+
+}
+header #top .top-content .header-nav ul li .font-top {
+  font-weight:bold;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+}
+header #top .top-content .header-nav ul li .font-down {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+header #top .top-content .header-user {
+  float: right;
+  overflow: hidden;
+}
+header #top .top-content .header-user .user-img {
+  position: relative;
+  float: left;
+  width: 48px;
+  height: 48px;
+
+  background-position: 189px 60px;
+}
+header #top .top-content .header-user .user-img .user-user {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-image: url("../image/buju/default.png");
+  background-position: center;
+  background-size: cover;
+}
+header #top .top-content .header-user .user-brief {
+  color: white;
+  float: left;
+  font-size: 16px;
+  margin: 10px 10px 0 10px;
+}
+header #top .top-content .header-app {
+  margin: 4px 31px 0 0px;
+  float: right;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+header #top .top-content .header-app .app-app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 16px;
+  height: 24px;
+
+  background-position: -303px -84px;
+}
+header #top .top-content .header-app .app-search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 21px;
+  height: 21px;
+
+  background-position: -381px -39px;
+}
+header .top-active {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+
+  background-position: -216px -39px;
+  bottom: 32px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+header .top-version {
+  color: #888787;
+  position: absolute;
+  right: 100px;
+  bottom: 32px;
+  font-size: 14px;
+}
+header .top-version span:nth-child(2) {
+  color: #f5d185;
+  margin-right: 10px;
+}
+header .top-version a {
+  display: inline-block;
+  width: 82px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #f5d185;
+  border: 2px solid #f5d185;
+  background: rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+}
+header .zhezhao {
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+header .zhezhao ul {
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  top: 93px;
+  left: 280px;
+}
+header .zhezhao ul li {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+header .zhezhao ul li a {
+  display: block;
+  width: 100%;
+  height: 29px;
+  overflow: hidden;
+  line-height: 29px;
+  color: #e1e1e1;
+  font-size: 14px;
+  text-align: center;
+}
+header .zhezhao ul li:nth-child(1) {
+  margin-left: -5px;
+}
+header .erweima {
+  right: 18%;
+  width: 211px;
+  height: 178px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+header .erweima i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15px;
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+header .erweima i img {
+  width: 119px;
+  height: 119px;
+}
+header .erweima p {
+  color: #cdbe91;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 145px;
+}
+header .erweima .img1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -5px;
+  right: -8px;
+}
+.logo {
+            float: left;
+            width: 320px;
+            height: 80px;
+            background-repeat: no-repeat;
+            /* 前一位数值一定是x轴，后面是y轴 ，不能颠倒*/
+            /*background-position: 20px 50px;*/
+            /* ps:还有混合单位（方位名词，精确单位或精确单位，方位名词），规定和精确单位一致 */
+        }
+
+#grey{background-color:AliceBlue;}

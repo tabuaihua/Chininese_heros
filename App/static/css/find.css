@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+
+}
+.logo {
+            float: left;
+            width: 320px;
+            height: 80px;
+            background-repeat: no-repeat;
+            /* 前一位数值一定是x轴，后面是y轴 ，不能颠倒*/
+            /*background-position: 20px 50px;*/
+            /* ps:还有混合单位（方位名词，精确单位或精确单位，方位名词），规定和精确单位一致 */
+        }
+.back{
+             width: 100%;
+             height: 1200px;
+             background-image: url(../image/heros/背景.png);
+
+}
+
+
+a{
+    color: #c9c9dd;
+}
+.one a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.one{
+    padding-top: 15px;
+    float: right;
+    top: 10px;
+     font-size: 30px;
+
+     margin-right: 20px;
+
+}
+
+.deng{
+    height: 80px;
+    padding-top: 15px;
+    float: right;
+    top: 10px;
+     font-size: 15px;
+      margin-right: 70px;
+}
+.top{
+    width: 100%;
+    height: 31px;
+}
+
+
+.two a:hover{
+          width: 40px;
+          height:31px;
+          background-color: grey;
+}
+
+
+
+
+.hero_class{
+    font-size: 20px;
+    color: red;
+    padding-left: 32px;
+
+}
+
+/*class的css写法*/
+.active {
+    background-color: gold;
+}
+.show{
+     padding-top: 10px;
+    padding-left: 15px;
+}
+.show div{
+   font-size: 15px;
+    font-weight: 500;
+    color: red;
+    padding-left: 33px;
+}
+.show b{
+    padding-left: 15px;
+    color: red;
+    letter-spacing:35px
+}
+.s_hero_name{
+    width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.super_main{
+    margin: 0 auto;
+    height: 1200px;
+    width: 1583px;
+    perspective: 900px;
+
+}
+
+#image_wrap{
+
+    position: relative;
+    width: 100%;
+    height: 500px;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg);
+    -webkit-transform-origin-y: top;
+    transition: all ease-in-out 0.4ms;
+}
+
+
+#image_wrap img{
+    position: absolute;
+    left: 739px;
+    top: 140px;
+    box-shadow: 1px 1px 1px red;
+    -webkit-box-reflect:below 10px -webkit-linear-gradient(transparent,transparent 50%,rgba(0,0,0,.3));
+}
+.hero{
+    float: left;
+    font-size: 30px;
+}
+.box{
+    width: 100%;
+    height: 80px;
+    background:rgba(0, 0, 0, 0.7)
+
+}
+#hero_one img{
+    float: left;
+    padding-top: 6px;
+    padding-left: 48px;
+}
+.hero_class{
+    font-size: 20px;
+    color: red;
+    padding-left: 32px;
+
+}
+.s1{
+position: absolute;
+display: none;
+}
+i{
+    font-style: normal;
+}
+.title{
+    text-align: center;
+    margin:30px 0;
+}
+.body{
+    width: 500px;
+    margin:0 auto;
+}
+.body div{
+    margin:20px 0;
+}
+.body input{
+    width: 100%;
+    padding: 13px 0;
+    padding-left:10px;
+    outline-color: #32A6EF;
+}
+.body1 input:nth-child(1){
+    width: 100px;
+    border-right:0;
+}
+.body1 input:nth-child(2){
+    width: 403px;
+    margin-left:-8px;
+}
+.body .phone{
+    border-radius:0 5px 5px 0;
+}
+.body2{
+    position: relative;
+}
+.body2 span{
+    position: absolute;
+    right:15px;
+    bottom: 33px;
+    font-size: 14px;
+    color: #32A6EF;
+}
+.body5 button{
+    width: 100%;
+    padding: 13px 0;
+    background-color: #32A6EF;
+    border:0;
+    border-radius: 5px;
+    color:#fff;
+    margin-top:30px;
+}
+i{
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: -20px;
+    color:red;
+    font-size: 12px;
+}
+.prev{
+    text-align: right;
+    padding-right: 20px;
+
+}
+.prev a{
+    color: #32A6EF;
+    font-size: 12px;
+
+}
+.body6 input{
+    width: 20px;
+}
+       /*class的css写法*/
+        .active {
+            background-color: gold;
+        }
+
+        /*某一个标签下的标签的css写法*/
+        #div1 div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray;
+            background-color: lavenderblush;
+            display: none;
+        }

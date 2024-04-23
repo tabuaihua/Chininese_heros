@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>英雄介绍</title>
+    <link rel='stylesheet'>
+    <link rel="stylesheet" href="../static/css/heros.css">
+    <link rel="stylesheet" href="../static/css/app.css">
+    <link rel="icon" href="../static/image/tlogo.png">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div>
+
+<div class="tb00">
+    <div class="tb_anima"></div>
+    <div class="tb01">
+        <div class="logo">
+            <div class="pic">
+                <div class="cube"></div>
+                <div class="cube_block_a">
+                    <div class="tria_a"></div>
+                    <div class="cube_a"></div>
+                    <div class="dot_a"></div>
+                </div>
+                <div class="cube_block_b">
+                    <div class="tria_b"></div>
+                    <div class="cube_b"></div>
+                    <div class="dot_b"></div>
+                </div>
+            </div>
+        </div>
+
+    <div class="tb02">
+        <div class="tittle">
+            <h1>人物详情</h1>
+            <h2>Everyone has his own unique life</h2>
+            <div>
+                <button id="love" aria-hidden="true">点赞</button><span name="dianzan">{{num}}</span>
+            <script>
+                $('#love').click(function () {
+                    var n = parseInt($(this).next().text())
+                    n += 1
+                    $(this).next().text(n)
+                })
+            </script>
+        </div>
+        </div>
+
+        <div class="tb03">
+            <div class="info">
+                <div class="block">
+
+                    <h4>
+                        <h7>{{heroname}}</h7>
+                        {{herosex}}<br/>
+                        出生—死亡时间：{{herobir}}<br/>
+                        {{heroass}}
+                    </h4>
+
+                </div>
+                <div class="block">
+                    <h3>Introduction
+                        <h4><span>生平介绍</span>
+                            {{herosto}}
+                        </h4>
+                    </h3>
+                </div>
+                <div class="block block_scale">
+                    <div class="block">
+                        <h3>历史画像
+                            <h4><img src="../static/image/heros/{{heronames}}.png"></h4>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+ </div>
+  </div>
+</div>
+
+<h3>人物视频</h3>
+<iframe  style="padding-top:10px;padding-left: 20px" src="//player.bilibili.com/player.html?aid=305890021&bvid=BV1CP411M7vv&cid=915020321&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="500" height="400"> </iframe>
+</div>
+<!-- partial -->
+</body>
+</html>

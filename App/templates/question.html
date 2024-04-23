@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>question</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/question.css">
+    <link rel="icon" href="../static/image/tlogo.png">
+    <script src="../static/js/question.js"></script>
+</head>
+<body>
+<header>
+    <div id="top">
+        <div class="top-content">
+            <div class="logo">
+                <img src="../static/image/logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <ul>
+                    <li>
+                        <a href="{% url 'home' %}">
+                            <div class="font-top">首页</div>
+                            <div class="font-down">INDEX</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'question' %}">
+                            <div class="font-top">测试</div>
+                            <div class="font-down">COLLECTION</div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="font-top">我的人物</div>
+                        <div class="font-down">CHARACTERS</div>
+                    </li>
+                    <li>
+                        <a href="{% url 'user' %}">
+                            <div class="font-top">我的主页</div>
+                            <div class="font-down">INTEGRAL</div>
+                        </a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="header-user">
+                <div class="user-img">
+                    <div class="user-user"></div>
+                </div>
+                <div class="user-brief">
+                    {{username.name}}
+                </div>
+            </div>
+            <div class="header-app">
+                <div class="app-app">
+
+                </div>
+
+            </div>
+            <div class="header-app">
+                <div class="app-search"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-active">
+
+    </div>
+</header>
+<!-- A introduction of the quiz.-->
+<div>
+    <h3>中国历史人物相关问题</h3>
+</div>
+
+<!-- Collect user information-->
+<div>
+    <form>
+        <fieldset id="grey">
+            <legend>请核对您的邮箱</legend>
+            欢迎用户:{{name.name}}<br>
+            邮箱：{{name.mail}}
+
+            <!--            <input type="text" name="Your name" onfocus="changeColor(this)"><br/>-->
+        </fieldset>
+    </form>
+</div>
+
+<!-- the quiz.-->
+<form action="" ,method="post">
+    <fieldset>
+        <legend>中国上下五千年历史测试</legend>
+
+        <!--part1-->
+        <fieldset>
+            <h3>单选（6分/题）</h3>
+            <div id="grey">
+                <fieldset class="question">
+                    <p id="1">Qeustion 1: “长风破浪会有时, 直挂云帆济沧海。” 出自下列哪一首诗？</p>
+                    <label><input type="radio" name="answer1" value="6"/>《行路难》</label>
+                    <br/>
+                    <label><input type="radio" name="answer1" value="0"/>《蜀道难》</label>
+                    <br/>
+                    <label><input type="radio" name="answer1" value="0"/>《长恨歌》</label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <p id="2">Qeustion 2: “蓦然回首，那人却在，灯火阑珊处。”出自哪一位诗人？</p>
+                    <label><input type="radio" name="answer2" value="0"/>北宋 辛弃疾</label>
+                    <br/>
+                    <label id="2"><input type="radio" name="answer2" value="6"/>南宋 辛弃疾</label>
+                        <br/>
+                        <label><input type="radio" name="answer2" value="0"/>南宋 李清照</label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <p id="3">Qeustion 3:《蜀道难》中“一夫当关,万夫莫开”的关指什么关？ </p>
+                    <label id="3"><input type="radio" name="answer3" value="6"/>剑门关</label>
+                    <br/>
+                    <label><input type="radio" name="answer3" value="0"/>山海关</label>
+                    <br/>
+                    <label><input type="radio" name="answer3" value="0"/>嘉峪关</label>
+                </fieldset>
+
+                <fieldset class="question">
+                    <p id="4">Qeustion 4:“东风不与周郎便，铜雀春深锁二乔”的诗人是谁？是谁要锁二乔 </p>
+                    <label id="4"><input type="radio" name="answer4" value="6"/>杜牧 曹操</label>
+                    <br/>
+                    <label><input type="radio" name="answer4" value="0"/>杜甫 曹丕</label>
+                    <br/>
+                    <label><input type="radio" name="answer4" value="0"/>王维 曹操</label>
+                </fieldset>
+                <button type="button" onclick="coreCount()">得分</button>
+                <button type="button" onclick="showWhichWrong()">错误提示</button>
+            </div>
+        </fieldset>
+    </fieldset>
+</form>
+</body>
+
+</html>
+
